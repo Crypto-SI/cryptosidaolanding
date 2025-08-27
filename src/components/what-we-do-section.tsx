@@ -16,7 +16,7 @@ export function WhatWeDoSection() {
         <div className="mx-auto max-w-5xl pt-12">
             <h3 className="text-2xl font-bold text-center mb-8">What We Do</h3>
             <div className="grid gap-8 md:grid-cols-3">
-                <Card className="text-center">
+                <Card className="text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
                     <CardHeader>
                         <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full">
                             <Lightbulb className="w-8 h-8" />
@@ -27,7 +27,7 @@ export function WhatWeDoSection() {
                         <p className="text-muted-foreground">We support and fund pioneering projects within the CryptoSI ecosystem.</p>
                     </CardContent>
                 </Card>
-                 <Card className="text-center">
+                 <Card className="text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
                     <CardHeader>
                         <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full">
                             <Vote className="w-8 h-8" />
@@ -38,7 +38,7 @@ export function WhatWeDoSection() {
                         <p className="text-muted-foreground">Our members vote on proposals and decide on the allocation of funds.</p>
                     </CardContent>
                 </Card>
-                 <Card className="text-center">
+                 <Card className="text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
                     <CardHeader>
                         <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full">
                             <TrendingUp className="w-8 h-8" />

@@ -22,7 +22,7 @@ export function JoinDaoSection() {
               Use the widget below to purchase our token on various chains.
             </p>
             <div className="mt-4">
-                <Card className="bg-secondary">
+                <Card className="bg-secondary transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
                     <CardHeader>
                         <CardTitle>Token Purchase Widget</CardTitle>
                     </CardHeader>

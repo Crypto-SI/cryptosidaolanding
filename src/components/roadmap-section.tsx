@@ -50,7 +50,7 @@ export function RoadmapSection() {
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-12">
             {roadmapItems.map((item) => (
-                <Card key={item.title}>
+                <Card key={item.title} className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
                     <CardHeader>
                         <div className="flex justify-between items-center">
                             <CardTitle className="font-body">{item.quarter}</CardTitle>

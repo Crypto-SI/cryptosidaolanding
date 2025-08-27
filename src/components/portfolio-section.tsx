@@ -49,7 +49,7 @@ export function PortfolioSection() {
         <div className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 pt-12">
           {projects.map((project) => (
             <Link href={project.link} target="_blank" rel="noopener noreferrer" key={project.name} className="group">
-              <Card className="overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl h-full flex flex-col">
+              <Card className="overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 h-full flex flex-col">
                 <CardHeader className="p-0">
                   <Image
                     src={project.imageUrl}
