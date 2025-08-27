@@ -32,6 +32,34 @@ const projects = [
     hint: "data analytics",
     link: "https://daowatch.blog",
   },
+  {
+    name: "Soonak",
+    description: "A revolutionary DeFi protocol.",
+    imageUrl: "https://picsum.photos/600/400?random=5",
+    hint: "DeFi protocol",
+    link: "#",
+  },
+  {
+    name: "Crypto Waffle",
+    description: "Sweet deals on crypto assets.",
+    imageUrl: "https://picsum.photos/600/400?random=6",
+    hint: "crypto waffle",
+    link: "#",
+  },
+  {
+    name: "Kin Protocol",
+    description: "Connecting communities with crypto.",
+    imageUrl: "https://picsum.photos/600/400?random=7",
+    hint: "community crypto",
+    link: "#",
+  },
+  {
+    name: "Lisa Kim",
+    description: "Digital art and NFT marketplace.",
+    imageUrl: "https://picsum.photos/600/400?random=8",
+    hint: "digital art",
+    link: "#",
+  },
 ];
 
 export function PortfolioSection() {
