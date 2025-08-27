@@ -3,27 +3,45 @@ import { DaoLogo } from "./icons";
 
 export function Footer() {
   return (
-    <footer className="border-t py-6 md:py-8 w-full">
-      <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
-        <div className="flex items-center gap-2">
-          <DaoLogo className="h-6 w-6 text-primary" />
-          <p className="text-sm text-muted-foreground font-headline">
-            CryptoSI DAO Hub
+    <footer className="border-t py-6 md:py-8 w-full bg-card">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start">
+          <Link href="/" className="flex items-center space-x-2 mb-4">
+            <DaoLogo className="h-6 w-6 text-primary" />
+            <span className="font-bold font-headline">CryptoSI DAO</span>
+          </Link>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} CryptoSI DAO. All rights reserved.
           </p>
         </div>
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} CryptoSI DAO. All rights reserved.
-        </p>
-        <div className="flex items-center gap-4">
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-            Twitter
-          </Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-            Discord
-          </Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-            Github
-          </Link>
+        <div>
+          <h3 className="font-semibold mb-4">Contact Us</h3>
+          <p className="text-sm text-muted-foreground">
+            [Contact Information]
+          </p>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-4">Follow Us</h3>
+          <div className="flex justify-center md:justify-start items-center gap-4">
+            <Link
+              href="https://twitter.com/Crypto_SI"
+              className="text-sm text-muted-foreground hover:text-primary"
+            >
+              Twitter
+            </Link>
+            <Link
+              href="https://www.instagram.com/cryptosi.eth/"
+              className="text-sm text-muted-foreground hover:text-primary"
+            >
+              Instagram
+            </Link>
+            <Link
+              href="https://discord.gg/63JbDWV"
+              className="text-sm text-muted-foreground hover:text-primary"
+            >
+              Discord
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
