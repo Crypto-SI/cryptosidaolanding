@@ -1,6 +1,6 @@
 "use server";
 
-import { summarizeProposal } from "@/ai/flows/summarize-proposal";
+// import { summarizeProposal } from "@/ai/flows/summarize-proposal";
 
 type FormState = {
   summary?: string | null;
@@ -15,14 +15,15 @@ export async function submitProposal(
   }
 
   try {
-    const result = await summarizeProposal({ proposalText });
-    return { summary: result.summary };
+    // const result = await summarizeProposal({ proposalText });
+    // return { summary: result.summary };
+    return { summary: "This is a placeholder summary." }; // Returning a placeholder
   } catch (e) {
     console.error(e);
     // In a real app, you'd want to log this error to a monitoring service
     return {
       error:
-        "There was an issue with the AI summarization service. Please try again later.",
+        "There was an issue with the proposal submission. Please try again later.",
     };
   }
 }

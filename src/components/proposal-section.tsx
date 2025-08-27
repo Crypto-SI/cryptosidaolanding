@@ -15,7 +15,7 @@ export function ProposalSection() {
               Submit Your Proposal
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-              Have an idea that could benefit the CryptoSI ecosystem? Submit it for community review. Our AI-powered system will generate a quick summary to help members evaluate your proposal efficiently.
+              Have an idea that could benefit the CryptoSI ecosystem? Submit it for community review.
             </p>
           </div>
           <div className="flex flex-col items-start space-y-4">

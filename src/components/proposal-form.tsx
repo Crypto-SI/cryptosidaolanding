@@ -15,7 +15,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { submitProposal } from "@/app/actions";
+// import { submitProposal } from "@/app/actions";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card";
 import { Loader2, Lightbulb } from "lucide-react";
 
@@ -29,7 +29,7 @@ const ProposalFormSchema = z.object({
 type ProposalFormValues = z.infer<typeof ProposalFormSchema>;
 
 export function ProposalForm() {
-  const [summary, setSummary] = useState<string | null>(null);
+  // const [summary, setSummary] = useState<string | null>(null);
   const [isPending, setIsPending] = useState(false);
   const { toast } = useToast();
 
@@ -42,18 +42,22 @@ export function ProposalForm() {
 
   async function onSubmit(data: ProposalFormValues) {
     setIsPending(true);
-    setSummary(null);
+    // setSummary(null);
     try {
-      const result = await submitProposal(data.proposal);
-      if (result.error) {
-        throw new Error(result.error);
-      }
-      setSummary(result.summary ?? null);
+      // const result = await submitProposal(data.proposal);
+      // if (result.error) {
+      //   throw new Error(result.error);
+      // }
+      // setSummary(result.summary ?? null);
+      toast({
+        title: "Proposal Submitted",
+        description: "Your proposal has been submitted for review.",
+      });
       form.reset();
     } catch (error) {
       toast({
         variant: "destructive",
-        title: "Error Summarizing Proposal",
+        title: "Error Submitting Proposal",
         description:
           error instanceof Error ? error.message : "An unknown error occurred.",
       });
@@ -87,15 +91,15 @@ export function ProposalForm() {
             {isPending ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Summarizing...
+                Submitting...
               </>
             ) : (
-              "Submit and Generate AI Summary"
+              "Submit Proposal"
             )}
           </Button>
         </form>
       </Form>
-      {summary && (
+      {/* {summary && (
         <Card className="mt-6 bg-secondary">
           <CardHeader>
             <div className="flex items-center gap-2">
@@ -110,7 +114,7 @@ export function ProposalForm() {
             <p className="text-sm">{summary}</p>
           </CardContent>
         </Card>
-      )}
+      )} */}
     </>
   );
 }
