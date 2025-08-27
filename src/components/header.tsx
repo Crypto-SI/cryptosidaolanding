@@ -5,6 +5,7 @@ import { DaoLogo } from "@/components/icons";
 import { Menu, Wallet } from "lucide-react";
 
 const navLinks = [
+  { href: "#about", label: "About" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#reporting", label: "Reporting" },
   { href: "#governance", label: "Governance" },
