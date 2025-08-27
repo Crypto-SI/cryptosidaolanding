@@ -14,7 +14,7 @@ export function HeroSection() {
           alt="DAO Hero Image"
           fill
           style={{ objectFit: 'cover' }}
-          className="opacity-10"
+          className="opacity-20"
         />
         <div className="absolute inset-0 bg-background/50" />
       </div>
