@@ -37,7 +37,7 @@ export function StakingSection() {
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-1 md:gap-12 lg:max-w-5xl lg:grid-cols-3 pt-12">
             {stakingOptions.map((option) => (
-                <Card key={option.title} className="flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
+                <Card key={option.title} className="flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
                     <CardHeader className="items-center">
                         {option.icon}
                         <CardTitle className="mt-4 text-center font-body">{option.title}</CardTitle>

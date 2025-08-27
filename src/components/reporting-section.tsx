@@ -15,7 +15,7 @@ export function ReportingSection() {
           </div>
         </div>
         <div className="mx-auto grid gap-4 pt-12 sm:grid-cols-1 md:grid-cols-3">
-          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
+          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Treasury Balance</CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
@@ -25,7 +25,7 @@ export function ReportingSection() {
               <p className="text-xs text-muted-foreground">+2.1% from last month</p>
             </CardContent>
           </Card>
-          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
+          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Total Value Locked (TVL)</CardTitle>
               <LandPlot className="h-4 w-4 text-muted-foreground" />
@@ -35,7 +35,7 @@ export function ReportingSection() {
               <p className="text-xs text-muted-foreground">Across all portfolio dApps</p>
             </CardContent>
           </Card>
-          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
+          <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Staking Rewards Paid</CardTitle>
               <HandCoins className="h-4 w-4 text-muted-foreground" />
@@ -47,7 +47,7 @@ export function ReportingSection() {
           </Card>
         </div>
         <div className="mx-auto pt-8">
-            <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20">
+            <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
                 <CardHeader>
                     <CardTitle>Treasury Growth</CardTitle>
                 </CardHeader>
