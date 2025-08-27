@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import { WhatWeDoSection } from "@/components/what-we-do-section";
 import { PortfolioSection } from "@/components/portfolio-section";
+import { DashboardSection } from "@/components/dashboard-section";
 import { ReportingSection } from "@/components/reporting-section";
 import { GovernanceSection } from "@/components/governance-section";
 import { StakingSection } from "@/components/staking-section";
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <WhatWeDoSection />
         <PortfolioSection />
+        <DashboardSection />
         <ReportingSection />
         <GovernanceSection />
         <StakingSection />

@@ -7,6 +7,7 @@ import { Menu, Wallet } from "lucide-react";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#portfolio", label: "Portfolio" },
+  { href: "#dashboard", label: "Dashboard" },
   { href: "#reporting", label: "Reporting" },
   { href: "#governance", label: "Governance" },
   { href: "#staking", label: "Staking" },
