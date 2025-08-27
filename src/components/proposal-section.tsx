@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export function ProposalSection() {
   return (
     <section id="proposals" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
+      {/* <div className="container px-4 md:px-6">
         <div className="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
@@ -26,7 +26,7 @@ export function ProposalSection() {
             </Card>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

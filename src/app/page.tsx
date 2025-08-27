@@ -4,7 +4,7 @@ import { PortfolioSection } from "@/components/portfolio-section";
 import { ReportingSection } from "@/components/reporting-section";
 import { GovernanceSection } from "@/components/governance-section";
 import { StakingSection } from "@/components/staking-section";
-import { ProposalSection } from "@/components/proposal-section";
+// import { ProposalSection } from "@/components/proposal-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <ReportingSection />
         <GovernanceSection />
         <StakingSection />
-        <ProposalSection />
+        {/* <ProposalSection /> */}
       </main>
       <Footer />
     </div>
