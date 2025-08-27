@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#reporting", label: "Reporting" },
   { href: "#governance", label: "Governance" },
   { href: "#staking", label: "Staking" },
+  { href: "#roadmap", label: "Roadmap" },
   { href: "#proposals", label: "Proposals" },
 ];
 
