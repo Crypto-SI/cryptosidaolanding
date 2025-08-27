@@ -1,35 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { ArrowUpRight } from "lucide-react";
 
-const dapps = [
+const projects = [
   {
-    name: "QuantumLeap Finance",
-    description: "A decentralized exchange with advanced liquidity solutions and minimal slippage.",
+    name: "Bidify",
+    description: "Decentralized Auction Platform.",
     imageUrl: "https://picsum.photos/600/400?random=1",
-    hint: "abstract blockchain",
-    tags: ["DeFi", "DEX"],
+    hint: "auction gavel",
+    link: "https://bidify.cloud",
   },
   {
-    name: "NexusMarket",
-    description: "A peer-to-peer NFT marketplace for rare digital collectibles and art.",
+    name: "Vulcan Pad",
+    description: "Launchpad for innovative crypto projects.",
     imageUrl: "https://picsum.photos/600/400?random=2",
-    hint: "digital art",
-    tags: ["NFT", "Marketplace"],
+    hint: "rocket launch",
+    link: "https://vulcanpad.tech",
   },
   {
-    name: "Sentinel Protocol",
-    description: "Decentralized identity and data management protocol putting users in control.",
+    name: "Turbo Trade",
+    description: "High-speed decentralized trading.",
     imageUrl: "https://picsum.photos/600/400?random=3",
-    hint: "security shield",
-    tags: ["Identity", "Data"],
+    hint: "fast chart",
+    link: "https://turbotrade.tech",
   },
   {
-    name: "EchoLend",
-    description: "A lending and borrowing platform with competitive interest rates and flash loans.",
+    name: "DAO Watch",
+    description: "Analytics and insights for DAOs.",
     imageUrl: "https://picsum.photos/600/400?random=4",
-    hint: "financial chart",
-    tags: ["DeFi", "Lending"],
+    hint: "data analytics",
+    link: "https://daowatch.blog",
   },
 ];
 
@@ -39,33 +40,35 @@ export function PortfolioSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-headline tracking-tighter sm:text-5xl">dApp Portfolio</h2>
+            <h2 className="text-3xl font-headline tracking-tighter sm:text-5xl">Our Projects</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              A curated selection of innovative decentralized applications powered by the CryptoSI DAO.
+              CryptoSI DAO has successfully completed several projects, thanks to our dedicated community. Here’s a showcase of what we’ve achieved:
             </p>
           </div>
         </div>
         <div className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 pt-12">
-          {dapps.map((dapp) => (
-            <Card key={dapp.name} className="overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader className="p-0">
-                <Image
-                  src={dapp.imageUrl}
-                  alt={dapp.name}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover"
-                  data-ai-hint={dapp.hint}
-                />
-              </CardHeader>
-              <CardContent className="p-6">
-                <CardTitle className="text-xl font-bold font-body">{dapp.name}</CardTitle>
-                <CardDescription className="mt-2">{dapp.description}</CardDescription>
-                <div className="mt-4 flex flex-wrap gap-2">
-                    {dapp.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-                </div>
-              </CardContent>
-            </Card>
+          {projects.map((project) => (
+            <Link href={project.link} target="_blank" rel="noopener noreferrer" key={project.name} className="group">
+              <Card className="overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl h-full flex flex-col">
+                <CardHeader className="p-0">
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.name}
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover"
+                    data-ai-hint={project.hint}
+                  />
+                </CardHeader>
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <CardTitle className="text-xl font-bold font-body flex items-center justify-between">
+                    {project.name}
+                    <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                  </CardTitle>
+                  <CardDescription className="mt-2">{project.description}</CardDescription>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
