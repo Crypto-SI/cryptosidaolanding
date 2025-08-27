@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Globe } from "@/components/globe";
 
 export function HeroSection() {
   return (
@@ -42,6 +43,9 @@ export function HeroSection() {
                 </Link>
               </Button>
             </div>
+          </div>
+           <div className="relative hidden lg:flex items-center justify-center">
+            <Globe />
           </div>
         </div>
       </div>
