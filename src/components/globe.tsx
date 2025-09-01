@@ -38,6 +38,18 @@ export function Globe() {
         { location: [51.5072, -0.1276], size: 0.05 },
         // Ghana (Accra)
         { location: [5.6037, -0.1870], size: 0.05 },
+        // Beijing
+        { location: [39.9042, 116.4074], size: 0.05 },
+        // Georgetown, Guyana
+        { location: [6.8013, -58.1551], size: 0.05 },
+        // New York
+        { location: [40.7128, -74.0060], size: 0.05 },
+        // Toronto
+        { location: [43.6532, -79.3832], size: 0.05 },
+        // Banjul
+        { location: [13.4549, -16.5790], size: 0.05 },
+        // Cape Town
+        { location: [-33.9249, 18.4241], size: 0.05 },
       ],
       onRender: (state) => {
         // This prevents rotation when dragging
