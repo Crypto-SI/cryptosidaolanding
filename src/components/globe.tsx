@@ -31,7 +31,7 @@ export function Globe() {
       mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [0.3, 0.3, 0.3],
-      markerColor: [0.1, 0.8, 0.1], // Changed to green
+      markerColor: [0.2, 0.6, 1],
       glowColor: [1, 1, 1],
       markers: [
         // London
