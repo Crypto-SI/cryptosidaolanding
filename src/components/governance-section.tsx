@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "./ui/button";
+import { Card } from "./ui/card";
 
 const discussions = [
   {
@@ -57,7 +58,7 @@ export function GovernanceSection() {
           </div>
         </div>
         <div className="mx-auto pt-12">
-            <Card>
+            <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
                 <Table>
                     <TableHeader>
                         <TableRow>
@@ -90,13 +91,4 @@ export function GovernanceSection() {
       </div>
     </section>
   );
-}
-
-// A simple card component to wrap the table for consistent styling
-function Card({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="rounded-lg border bg-card text-card-foreground shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
-            {children}
-        </div>
-    )
 }
