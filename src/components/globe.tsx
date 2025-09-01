@@ -31,9 +31,14 @@ export function Globe() {
       mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [0.3, 0.3, 0.3],
-      markerColor: [0.1, 0.8, 1],
+      markerColor: [0.1, 0.8, 0.1], // Changed to green
       glowColor: [1, 1, 1],
-      markers: [],
+      markers: [
+        // London
+        { location: [51.5072, -0.1276], size: 0.05 },
+        // Ghana (Accra)
+        { location: [5.6037, -0.1870], size: 0.05 },
+      ],
       onRender: (state) => {
         // This prevents rotation when dragging
         state.phi = rotation.current;
