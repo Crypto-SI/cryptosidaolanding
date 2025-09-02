@@ -11,8 +11,8 @@ const navLinks = [
   { href: "#reporting", label: "Reporting" },
   { href: "#governance", label: "Governance" },
   { href: "#staking", label: "Staking" },
+  { href: "#proposals", label: "Proposals" },
   { href: "#roadmap", label: "Roadmap" },
-  { href: "https://app.aragon.org/dao/arbitrum-mainnet/0xA736319152057f9c3beb556EeE76Ea56598FFa13/proposals?proposals=tokenvoting", label: "Proposals" },
 ];
 
 export function Header() {
