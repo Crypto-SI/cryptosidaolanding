@@ -9,8 +9,8 @@ export function DaoLogo({ className }: DaoLogoProps) {
     <Image
       src="/images/crddicon.png"
       alt="CryptoSI DAO Logo"
-      width={24}
-      height={24}
+      width={48}
+      height={48}
       className={className}
     />
   );
