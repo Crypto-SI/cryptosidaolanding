@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { DollarSign, LandPlot, HandCoins } from "lucide-react";
 import { TreasuryChart } from "./treasury-chart";
 
@@ -55,6 +57,13 @@ export function ReportingSection() {
                     <TreasuryChart />
                 </CardContent>
             </Card>
+        </div>
+        <div className="flex justify-center mt-8">
+          <Button asChild variant="outline">
+            <Link href="https://app.aragon.org/dao/arbitrum-mainnet/0xA736319152057f9c3beb556EeE76Ea56598FFa13/assets" target="_blank" rel="noopener noreferrer">
+              View Assets
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
