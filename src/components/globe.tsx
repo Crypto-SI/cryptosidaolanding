@@ -13,8 +13,12 @@ export function Globe() {
 
     let width = 0
     const onResize = () => {
-      if (canvasRef.current) {
-        width = canvasRef.current.offsetWidth
+      if (canvasRef.current && (width = canvasRef.current.offsetWidth)) {
+        window.requestAnimationFrame(() => {
+          if (globeRef.current) {
+            globeRef.current.resize()
+          }
+        })
       }
     }
     window.addEventListener("resize", onResize)
