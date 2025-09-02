@@ -36,8 +36,8 @@ export function ReportingSection() {
                     <DollarSign className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                    <div className="text-2xl font-bold">$12,458,039.42</div>
-                    <p className="text-xs text-muted-foreground">+2.1% from last month</p>
+                    <div className="text-2xl font-bold">Data Coming Soon</div>
+                    <p className="text-xs text-muted-foreground">Awaiting initial DAO funding.</p>
                     </CardContent>
                 </Card>
                 <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
@@ -46,8 +46,8 @@ export function ReportingSection() {
                     <LandPlot className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                    <div className="text-2xl font-bold">$78,210,991.00</div>
-                    <p className="text-xs text-muted-foreground">Across all portfolio dApps</p>
+                    <div className="text-2xl font-bold">TBD</div>
+                    <p className="text-xs text-muted-foreground">Will be calculated as projects launch.</p>
                     </CardContent>
                 </Card>
                 <Card className="transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
@@ -56,8 +56,8 @@ export function ReportingSection() {
                     <HandCoins className="h-4 w-4 text-muted-foreground" />
                     </CardHeader>
                     <CardContent>
-                    <div className="text-2xl font-bold">$3,102,492.71</div>
-                    <p className="text-xs text-muted-foreground">Total rewards distributed to date</p>
+                    <div className="text-2xl font-bold">TBD</div>
+                    <p className="text-xs text-muted-foreground">Staking program launching soon.</p>
                     </CardContent>
                 </Card>
                 </div>

@@ -7,17 +7,17 @@ import {
 } from "@/components/ui/chart";
 
 const chartData = [
-  { month: "January", value: 8200000 },
-  { month: "February", value: 9100000 },
-  { month: "March", value: 9500000 },
-  { month: "April", value: 10200000 },
-  { month: "May", value: 11500000 },
-  { month: "June", value: 12458039 },
+  { month: "Launch", value: 0 },
+  { month: "Q1", value: 1500 },
+  { month: "Q2", value: 3000 },
+  { month: "Q3", value: 5000 },
+  { month: "Q4", value: 8000 },
+  { month: "Future", value: 15000 },
 ];
 
 const chartConfig = {
   value: {
-    label: "Treasury Value",
+    label: "Treasury Value (Projected)",
     color: "hsl(var(--primary))",
   },
 };
@@ -39,13 +39,18 @@ export function TreasuryChart() {
                 tickLine={false}
                 axisLine={false}
                 tickMargin={8}
-                tickFormatter={(value) => value.slice(0, 3)}
+                tickFormatter={(value) => value}
                 />
                 <Tooltip
                     cursor={false}
                     content={<ChartTooltipContent 
                         indicator="dot"
-                        formatter={(value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(Number(value))}
+                        formatter={(value, name, props) => {
+                          if (typeof value === 'number' && value > 0) {
+                            return ["Projected growth", null];
+                          }
+                          return ["$0", null];
+                        }}
                     />}
                 />
                 <defs>
