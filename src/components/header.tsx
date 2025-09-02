@@ -14,6 +14,7 @@ const navLinks = [
   // { href: "#staking", label: "Staking" },
   { href: "#proposals", label: "Proposals" },
   { href: "#roadmap", label: "Roadmap" },
+  { href: "#join", label: "Join" },
 ];
 
 export function Header() {
