@@ -6,7 +6,7 @@ import { DashboardSection } from "@/components/dashboard-section";
 import { ReportingSection } from "@/components/reporting-section";
 import { GovernanceSection } from "@/components/governance-section";
 // import { StakingSection } from "@/components/staking-section";
-import { ProposalSection } from "@/components/proposal-section";
+import { CipSection } from "@/components/cip-section";
 import { JoinDaoSection } from "@/components/join-dao-section";
 import { RoadmapSection } from "@/components/roadmap-section";
 import { Footer } from "@/components/footer";
@@ -23,7 +23,7 @@ export default function Home() {
         <ReportingSection />
         <GovernanceSection />
         {/* <StakingSection /> */}
-        <ProposalSection />
+        <CipSection />
         <RoadmapSection />
         <JoinDaoSection />
       </main>
