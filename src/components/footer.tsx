@@ -4,7 +4,7 @@ import { DaoLogo } from "./icons";
 export function Footer() {
   return (
     <footer className="border-t py-6 md:py-8 w-full bg-card">
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
           <Link href="/" className="flex items-center space-x-2 mb-4">
             <DaoLogo className="h-6 w-6 text-primary" />
@@ -14,13 +14,7 @@ export function Footer() {
             © {new Date().getFullYear()} CryptoSI DAO. All rights reserved.
           </p>
         </div>
-        <div>
-          <h3 className="font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm text-muted-foreground">
-            [Contact Information]
-          </p>
-        </div>
-        <div>
+        <div className="flex flex-col items-center md:items-end">
           <h3 className="font-semibold mb-4">Follow Us</h3>
           <div className="flex justify-center md:justify-start items-center gap-4">
             <Link
