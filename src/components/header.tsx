@@ -10,7 +10,7 @@ const navLinks = [
   { href: "#dashboard", label: "Dashboard" },
   { href: "#reporting", label: "Reporting" },
   { href: "#governance", label: "Governance" },
-  { href: "#staking", label: "Staking" },
+  // { href: "#staking", label: "Staking" },
   { href: "#proposals", label: "Proposals" },
   { href: "#roadmap", label: "Roadmap" },
 ];
