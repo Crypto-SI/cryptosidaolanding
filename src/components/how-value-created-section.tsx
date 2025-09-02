@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { DollarSign, Flame, Landmark } from "lucide-react";
+import { DollarSign, Flame, Landmark, ChevronDown, ChevronUp } from "lucide-react";
+import { Button } from "./ui/button";
 
 const valuePoints = [
     {
@@ -20,39 +24,55 @@ const valuePoints = [
 ]
 
 export function HowValueCreatedSection() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <section id="value-creation" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-headline tracking-tighter sm:text-5xl">How CryptoSI DAO Creates Value</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              The CryptoSI DAO is designed to create a self-sustaining and value-generating ecosystem through its decentralized applications (Dapps) and investments.
-            </p>
+            <div className="flex items-center justify-center gap-4">
+              <h2 className="text-3xl font-headline tracking-tighter sm:text-5xl">How CryptoSI DAO Creates Value</h2>
+              <Button variant="ghost" size="icon" onClick={() => setIsExpanded(!isExpanded)}>
+                {isExpanded ? <ChevronUp className="h-6 w-6" /> : <ChevronDown className="h-6 w-6" />}
+                <span className="sr-only">{isExpanded ? 'Collapse section' : 'Expand section'}</span>
+              </Button>
+            </div>
+            {isExpanded && (
+              <>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  The CryptoSI DAO is designed to create a self-sustaining and value-generating ecosystem through its decentralized applications (Dapps) and investments.
+                </p>
+              </>
+            )}
           </div>
         </div>
-        <div className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-1 lg:grid-cols-1 pt-12">
-          {valuePoints.map((item) => (
-            <Card key={item.title} className="flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
-                <CardHeader>
-                    <div className="flex items-center gap-4">
-                        <div className="bg-primary/10 text-primary p-3 rounded-full w-fit">
-                            {item.icon}
+        {isExpanded && (
+          <>
+            <div className="mx-auto grid grid-cols-1 gap-6 sm:grid-cols-1 lg:grid-cols-1 pt-12">
+              {valuePoints.map((item) => (
+                <Card key={item.title} className="flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40">
+                    <CardHeader>
+                        <div className="flex items-center gap-4">
+                            <div className="bg-primary/10 text-primary p-3 rounded-full w-fit">
+                                {item.icon}
+                            </div>
+                            <CardTitle className="font-body">{item.title}</CardTitle>
                         </div>
-                        <CardTitle className="font-body">{item.title}</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-grow">
-                    <p className="text-muted-foreground">{item.description}</p>
-                </CardContent>
-            </Card>
-          ))}
-        </div>
-        <div className="text-center mt-12">
-            <p className="text-lg text-muted-foreground">
-                Through these mechanisms, the CryptoSI DAO aims to foster innovation, incentivize participation, and ensure the long-term success and growth of the ecosystem for all its members.
-            </p>
-        </div>
+                    </CardHeader>
+                    <CardContent className="flex flex-col flex-grow">
+                        <p className="text-muted-foreground">{item.description}</p>
+                    </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="text-center mt-12">
+                <p className="text-lg text-muted-foreground">
+                    Through these mechanisms, the CryptoSI DAO aims to foster innovation, incentivize participation, and ensure the long-term success and growth of the ecosystem for all its members.
+                </p>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
