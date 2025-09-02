@@ -5,31 +5,31 @@ import { Star } from "lucide-react";
 
 const roadmapItems = [
   {
-    quarter: "Q3 2024",
+    quarter: "Q3 2025",
     title: "Dashboard Creation",
     description: "View all things related to the DAO in one place.",
     stars: 4,
   },
   {
-    quarter: "Q4 2024",
+    quarter: "Q4 2025",
     title: "Token distribution",
     description: "CRDD distribution will be ongoing in phases.",
     stars: 3,
   },
   {
-    quarter: "Q1 2025",
+    quarter: "Q1 2026",
     title: "Decentralised CryptoSI Team",
     description: "allow people to join freely.",
     stars: 2,
   },
   {
-    quarter: "Q2 2025",
+    quarter: "Q2 2026",
     title: "NFT Project",
     description: "PFP for CRDD token holders.",
     stars: 1,
   },
   {
-    quarter: "Q3 2025",
+    quarter: "Q3 2026",
     title: "CryptoSI TV",
     description: "Full media organisation dedicated to true crypto adoption.",
     stars: 1,
