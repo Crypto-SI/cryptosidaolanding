@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#governance", label: "Governance" },
   { href: "#staking", label: "Staking" },
   { href: "#roadmap", label: "Roadmap" },
-  { href: "#proposals", label: "Proposals" },
+  { href: "https://app.aragon.org/dao/arbitrum-mainnet/0xA736319152057f9c3beb556EeE76Ea56598FFa13/proposals?proposals=tokenvoting", label: "Proposals" },
 ];
 
 export function Header() {
@@ -32,6 +32,8 @@ export function Header() {
                 key={label}
                 href={href}
                 className="transition-colors hover:text-primary"
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
                 {label}
               </Link>
@@ -64,6 +66,8 @@ export function Header() {
                       key={label}
                       href={href}
                       className="text-lg font-medium transition-colors hover:text-primary"
+                      target={href.startsWith('http') ? '_blank' : undefined}
+                      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     >
                       {label}
                     </Link>

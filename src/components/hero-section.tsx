@@ -22,7 +22,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="#proposals">
+                <Link href="https://app.aragon.org/dao/arbitrum-mainnet/0xA736319152057f9c3beb556EeE76Ea56598FFa13/proposals?proposals=tokenvoting" target="_blank" rel="noopener noreferrer">
                   Submit a Proposal
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
