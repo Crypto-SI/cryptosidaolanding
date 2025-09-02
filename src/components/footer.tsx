@@ -21,18 +21,21 @@ export function Footer() {
             <Link
               href="https://twitter.com/Crypto_SI"
               className="text-sm text-muted-foreground hover:text-primary"
+              target="_blank" rel="noopener noreferrer"
             >
               Twitter
             </Link>
             <Link
               href="https://www.instagram.com/cryptosi.eth/"
               className="text-sm text-muted-foreground hover:text-primary"
+              target="_blank" rel="noopener noreferrer"
             >
               Instagram
             </Link>
             <Link
-              href="https://discord.gg/63JbDWV"
+              href="https://discord.gg/VSPUucsyvn"
               className="text-sm text-muted-foreground hover:text-primary"
+              target="_blank" rel="noopener noreferrer"
             >
               Discord
             </Link>

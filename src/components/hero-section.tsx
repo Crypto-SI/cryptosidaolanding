@@ -28,7 +28,7 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="#governance">
+                <Link href="https://discord.gg/VSPUucsyvn" target="_blank" rel="noopener noreferrer">
                   Join Discussion
                 </Link>
               </Button>

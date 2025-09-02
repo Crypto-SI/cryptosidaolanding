@@ -83,7 +83,7 @@ export function RoadmapSection() {
                 </div>
                 <div className="text-center mt-12">
                     <p className="text-muted-foreground">
-                        Join the conversation on our <Link href="https://discord.gg/63JbDWV" className="text-primary hover:underline">Discord Channel</Link> and view detailed project plans on our Kanban board.
+                        Join the conversation on our <Link href="https://discord.gg/VSPUucsyvn" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Discord Channel</Link> and view detailed project plans on our Kanban board.
                     </p>
                 </div>
             </>
