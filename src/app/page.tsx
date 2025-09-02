@@ -10,6 +10,7 @@ import { GovernanceSection } from "@/components/governance-section";
 import { CipSection } from "@/components/cip-section";
 import { JoinDaoSection } from "@/components/join-dao-section";
 import { RoadmapSection } from "@/components/roadmap-section";
+import { OpenSourceSection } from "@/components/open-source-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <CipSection />
         <RoadmapSection />
         <JoinDaoSection />
+        <OpenSourceSection />
       </main>
       <Footer />
     </div>
