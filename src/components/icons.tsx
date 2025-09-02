@@ -7,7 +7,7 @@ interface DaoLogoProps {
 export function DaoLogo({ className }: DaoLogoProps) {
   return (
     <Image
-      src="/crddicon.png"
+      src="/images/crddicon.png"
       alt="CryptoSI DAO Logo"
       width={24}
       height={24}
