@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <Link href="/" className="flex items-center space-x-2 mb-4">
             <DaoLogo className="h-6 w-6 text-primary" />
-            <Image src="/images/crddlogotrans.png" alt="CryptoSI DAO" width={120} height={24} />
+            <Image src="/images/crddlogotrans1.png" alt="CryptoSI DAO" width={120} height={24} />
           </Link>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} CryptoSI DAO. All rights reserved.

@@ -24,7 +24,7 @@ export function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <DaoLogo className="h-6 w-6 text-primary" />
-            <Image src="/images/crddlogotrans.png" alt="CryptoSI DAO" width={120} height={24} className="hidden sm:inline-block" />
+            <Image src="/images/crddlogotrans1.png" alt="CryptoSI DAO" width={120} height={24} className="hidden sm:inline-block" />
           </Link>
           <nav className="hidden space-x-6 text-sm font-medium md:flex">
             {navLinks.map(({ href, label }) => (
@@ -57,7 +57,7 @@ export function Header() {
                 <div className="flex items-center pb-2">
                     <Link href="/" className="flex items-center space-x-2">
                         <DaoLogo className="h-6 w-6 text-primary" />
-                        <Image src="/images/crddlogotrans.png" alt="CryptoSI DAO" width={120} height={24} />
+                        <Image src="/images/crddlogotrans1.png" alt="CryptoSI DAO" width={120} height={24} />
                     </Link>
                 </div>
                 <div className="flex flex-col space-y-4 mt-4">
