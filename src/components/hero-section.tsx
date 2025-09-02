@@ -4,11 +4,20 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Globe } from "@/components/globe";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
     <section className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 z-0 bg-background/50" />
+      <Image
+        src="/images/daohero.png"
+        alt="DAO Hero background"
+        fill
+        className="object-cover object-center"
+        data-ai-hint="abstract background"
+        priority
+      />
+      <div className="absolute inset-0 z-0 bg-background/80" />
       <div className="container relative z-10 px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center space-y-4">
