@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DaoLogo } from "@/components/icons";
-import { Menu, Wallet } from "lucide-react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
+import { ConnectWalletButton } from "./connect-wallet-button";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -33,8 +36,8 @@ export function Header() {
                 key={label}
                 href={href}
                 className="transition-colors hover:text-primary"
-                target={href.startsWith('http') ? '_blank' : undefined}
-                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target={href.startsWith("http") ? "_blank" : undefined}
+                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
               >
                 {label}
               </Link>
@@ -42,10 +45,9 @@ export function Header() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button className="hidden sm:inline-flex">
-            <Wallet className="mr-2 h-4 w-4" />
-            Connect Wallet
-          </Button>
+          <div className="hidden sm:block">
+            <ConnectWalletButton />
+          </div>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -56,10 +58,10 @@ export function Header() {
             <SheetContent side="right">
               <div className="flex flex-col h-full">
                 <div className="flex items-center pb-2">
-                    <Link href="/" className="flex items-center space-x-2">
-                        <DaoLogo className="h-6 w-6 text-primary" />
-                        <Image src="/images/crddlogotrans1.png" alt="CryptoSI DAO" width={120} height={24} />
-                    </Link>
+                  <Link href="/" className="flex items-center space-x-2">
+                    <DaoLogo className="h-6 w-6 text-primary" />
+                    <Image src="/images/crddlogotrans1.png" alt="CryptoSI DAO" width={120} height={24} />
+                  </Link>
                 </div>
                 <div className="flex flex-col space-y-4 mt-4">
                   {navLinks.map(({ href, label }) => (
@@ -67,17 +69,16 @@ export function Header() {
                       key={label}
                       href={href}
                       className="text-lg font-medium transition-colors hover:text-primary"
-                      target={href.startsWith('http') ? '_blank' : undefined}
-                      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      target={href.startsWith("http") ? "_blank" : undefined}
+                      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                     >
                       {label}
                     </Link>
                   ))}
                 </div>
-                <Button className="mt-auto">
-                  <Wallet className="mr-2 h-4 w-4" />
-                  Connect Wallet
-                </Button>
+                <div className="mt-auto">
+                  <ConnectWalletButton />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
