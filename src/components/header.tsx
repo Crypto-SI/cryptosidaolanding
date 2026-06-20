@@ -18,6 +18,7 @@ const navLinks = [
   // { href: "#staking", label: "Staking" },
   { href: "#proposals", label: "Proposals" },
   { href: "#roadmap", label: "Roadmap" },
+  { href: "#team", label: "Team" },
   { href: "#join", label: "Join" },
 ];
 

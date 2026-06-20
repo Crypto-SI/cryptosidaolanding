@@ -12,6 +12,7 @@ import { CipSection } from "@/components/cip-section";
 import { JoinDaoSection } from "@/components/join-dao-section";
 import { RoadmapSection } from "@/components/roadmap-section";
 import { OpenSourceSection } from "@/components/open-source-section";
+import { TeamSection } from "@/components/team-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <RoadmapSection />
         <JoinDaoSection />
         <OpenSourceSection />
+        <TeamSection />
       </main>
       <Footer />
     </div>
