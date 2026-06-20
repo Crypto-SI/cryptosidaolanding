@@ -2,7 +2,7 @@
 
 ![CryptoSI DAO](https://github.com/CryptoSI-DAODAO/crypto-si---landing-page/assets/173495818/f74e6f28-6617-48f8-b397-ac150821d960)
 
-The official web presence and community portal for the CryptoSI Decentralized Autonomous Organization (DAO). This Next.js application serves as the central hub for members, investors, and the public to learn about the DAO's mission, projects, financials, and governance processes.
+The official web presence and community portal for the CryptoSI Decentralized Autonomous Organization (DAO). This Next.js application serves as the central hub for members, investors, and the public to learn about the DAO's mission, projects, financials, and governance processes
 
 Built with a focus on transparency, community engagement, and cutting-edge technology, this platform is the gateway to participating in the future of decentralized finance and collaboration.
 
